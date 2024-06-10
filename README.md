@@ -21,4 +21,4 @@ python3 kzscript.py
 
 ## Feedback
 
-If you have feedback Contact us: ktpdenjanrai@gmail.com
+If you have feedback Contact us: smokemobplaynimzo@gmail.com
