@@ -75,6 +75,7 @@ def tool():
 
 def change():
   print("\n[?] Version 0.1build23\nAdd Category, Add Bugs, Add Backdoor\n")
+  print("[?] Version 0.2\nYou can install all Blackarch tools in one comment!\n")
 
 def about():
   print("\n[+] Abot BlackArch Linux:\nBlackArch Linux is an Arch Linux-based penetration testing distribution\nfor penetration testers and security researchers.\nThe repository contains 2852 tools. You can install tools individually or in groups.")
@@ -82,11 +83,10 @@ def about():
 
 def main():
   banner()
-  print('[+] BlackArch Tool Installer')
-  print('[+] Message from dev> Have a nice day.')
-  print('[+] Description> I dont know why, I love her. Support Arch Base')
-  print('[+] BlackArch Website: https://blackarch.org')
-  print('[+] GitHub: https://github.com/Plague1234')
+  print('\033[1m[+] Message from dev> Have a nice day.\033[0m')
+  print('\033[1m[+] Description> I dont know why, I love her. Support Arch Base\033[0m')
+  print('\033[1m[+] BlackArch Website: https://blackarch.org \033[0m')
+  print('\033[1m[+] GitHub: https://github.com/bunnyhop-dev \033[0m')
   print('\n[1] Install arch repo')
   print('[2] Install BlackArch Tool')
   print('[3] Changelog')
