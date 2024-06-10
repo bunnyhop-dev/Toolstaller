@@ -1,18 +1,33 @@
 import os, sys
 from time import sleep as wait
 
-h_banner = """
+h_banner = """\033[91m
 ▄ ▜     ▌ ▄▖    ▌   ▄▖    ▜   ▄▖    ▗   ▜ ▜
 ▙▘▐ ▀▌▛▘▙▘▌▌▛▘▛▘▛▌  ▐ ▛▌▛▌▐   ▐ ▛▌▛▘▜▘▀▌▐ ▐ █▌▛▘
 ▙▘▐▖█▌▙▖▛▖▛▌▌ ▙▖▌▌  ▐ ▙▌▙▌▐▖  ▟▖▌▌▄▌▐▖█▌▐▖▐▖▙▖▌
 
-"""
+\033[1;m"""
 
 def banner():
   print(h_banner)
 
 def all():
-  print()
+  print("\n[+] All Blackarch tools Installing...\n")
+  os.system('''sudo pacman -S blackarch-anti-forensic blackarch-automation
+            blackarch-backdoor blackarch-automobile blackarch-binary
+            blackarch-bluetooth blackarch-cracker blackarch-crypto
+            blackarch-cryoptography blackarch-database blackarch-debugger
+            blackarch-decompiler blackarch-defensive blackarch-disassembler
+            blackarch-dos blackarch-drone blackarch-explotation
+            blackarch-fingerprint blackarch-firmware blackarch-forensic
+            blackarch-fuzzer blackarch-hardware blackarch-honeypot blackarch-ids
+            blackarch-keylogger blackarch-malware blackarch-misc
+            blackarch-mobile blackarch-networking blackarch-nfc blackarch-packer
+            blackarch-proxy blackarch-radio blackarch-recon blackarch-reversing
+            blackarch-scan blackarch-scanner blackarch-sniffer
+            blackarch-social-engineering blackarch-spoof blackarch-stego
+            blackarch-tunnel blackarch-unpacker blackarch-voip blackarch-webapp
+            blackarch-windows blackarch-wireless''')
 
 def antiforensic():
   print("\n[+] Anti-Forensic Installing...\n")
