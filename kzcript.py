@@ -4,20 +4,16 @@ from core.kkcore import *
 
 def repo():
   print('\n[+] Adding Arch repo to your system\n')
-  os.system('curl -O https://blackarch.org/strap.sh')
-  os.system('echo 5ea40d49ecd14c2e024deecf90605426db97ea0c strap.sh | sha1sum -c')
-  os.system('chmod +x strap.sh')
-  os.system('sudo ./strap.sh')
-  os.system('sudo pacman -Syyu')
-  wait(3)
+  os.system('curl -O https://blackarch.org/strap.sh && echo 26849980b35a42e6e192c6d9ed8c46f0d6d06047 strap.sh | sha1sum -c && chmod +x strap.sh && yes | sudo ./strap.sh && yes | sudo pacman -Syyu && rm strap.sh')
   print('\n[+] Install Completed!\n')
-  sys.exit()
+  wait(2)
+  restart_program()
 
 def tool():
   print('\n[+] Installation BlackArch Tool\n')
   print("Category> ALL)/1.Anti-Forensic, 2.Automation, 3.AutoMobile,\n4.Backdoor, 5.Binary, 6.Bluetooth, 7.CodeAutit, 8.Cracker,9.Crypto,\n10.Cryptography, 11.Database, 12.Debugger, 13.Decompiler,14.Defensive,\n15.Disassembler, 16.Dos, 17.Drone, 18.Explotation,19.Fingerprint,\n20.Firmware, 21.Forensic, 22.Fuzzer, 23.Hardware, 24.Honeypot, 25.IDS,\n26.Keylogger, 27.Malware, 28.Misc, 29.Mobile, 30.Networking, 31.NFC,\n32.Packer, 33.Proxy, 34.Radio, 35.Recon, 36.Reversing, 37.Scan,\n38.Scanner, 39.Sniffer, 40.Social-Engineering, 41.Spoof, 42.Stego,\n43.Tunnel, 44.Unpacker, 45.Voip, 46.Web App, 47.Windows, 48.Wireless")
   print("\n[?] What's category want you to install")
-  tl = input("\n[?] Category> ")
+  tl = input("\n🗀  > ")
 
   if tl.strip() == "All" or tl.strip() == "all" or tl.strip() == "ALL": all()
   elif tl.strip() == "1": antiforensic()
@@ -71,11 +67,12 @@ def tool():
   else:
     print("\n[!] ERROR: Wrong Input\n")
     wait(2)
-    sys.exit()
+    restart_program()
 
 def change():
   print("\n[?] Version 0.1build23\nAdd Category, Add Bugs, Add Backdoor\n")
   print("[?] Version 0.2\nYou can install all Blackarch tools in one comment!\n")
+  print('[?] Version 0.3\nFix bug Blackarch Repo install\n')
 
 def about():
   print("\n[+] Abot BlackArch Linux:\nBlackArch Linux is an Arch Linux-based penetration testing distribution\nfor penetration testers and security researchers.\nThe repository contains 2852 tools. You can install tools individually or in groups.")
@@ -84,16 +81,16 @@ def about():
 def main():
   banner()
   print('\033[1m[+] Message from dev> Have a nice day.\033[0m')
-  print('\033[1m[+] Description> I dont know why, I love her. Support Arch Base\033[0m')
+  print('\033[1m[+] Description> Easy to Install :). Support Arch Base\033[0m')
   print('\033[1m[+] BlackArch Website: https://blackarch.org \033[0m')
   print('\033[1m[+] GitHub: https://github.com/bunnyhop-dev \033[0m')
-  print('\n[1] Install arch repo')
+  print('\n[1] Install BlackArch repo')
   print('[2] Install BlackArch Tool')
   print('[3] Changelog')
   print('[4] About BlackArch')
   print('[0] Exit')
 
-  sel = input("\n[?] Kidzcript Selcet> ")
+  sel = input("\n🗀  > ")
   if sel.strip() == "1": repo()
   elif sel.strip() == "2": tool()
   elif sel.strip() == "3": change()
@@ -101,7 +98,7 @@ def main():
   else:
     print("\n[!] ERROR: Wrong Input\n")
     wait(2)
-    sys.exit()
+    restart_program()
 
 if __name__ == "__main__":
   os.system('clear')
