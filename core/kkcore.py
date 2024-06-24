@@ -11,6 +11,11 @@ h_banner = """\033[91m
 def banner():
   print(h_banner)
 
+def restart_program():
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
+    curdir = os.getcwd()
+
 def all():
   print("\n[+] All Blackarch tools Installing...\n")
   os.system('''sudo pacman -S blackarch-anti-forensic blackarch-automation
