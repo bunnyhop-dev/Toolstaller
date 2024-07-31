@@ -11,14 +11,10 @@ Kidzsec
 ## Installation
 
 ```bash
-git clone https://github.com/Plague1234/Toolstaller
+git clone https://github.com/bunnyhop-dev/Toolstaller
 cd Toolstaller
 python3 kzscript.py
 ```
 
 ## Screenshot
 ![iloveyou](https://github.com/Plague1234/Toolstaller/blob/main/blackarchtool.jpg?raw=true)
-
-## Feedback
-
-If you have feedback Contact us: smokemobplaynimzo@gmail.com
