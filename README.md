@@ -5,7 +5,7 @@ This script make for arch user, easy blackarch tool install
 # Author
 
 ```python
-Kidzsec
+DejaVolf
 ```
 
 ## Installation
