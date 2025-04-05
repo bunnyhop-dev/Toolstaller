@@ -13,7 +13,8 @@ Kidzsec
 ```bash
 git clone https://github.com/bunnyhop-dev/Toolstaller
 cd Toolstaller
-python3 kzscript.py
+chmod +x blackarch-installer.sh
+./blackarch-installer.sh
 ```
 
 ## Screenshot
