@@ -9,6 +9,9 @@ DejaVolf
 ```
 
 ## Installation
+```
+!! >>Install fzf first
+```
 
 ```bash
 git clone https://github.com/bunnyhop-dev/Toolstaller
